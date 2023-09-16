@@ -20,4 +20,4 @@ jobs:
         server: access976482937.webspace-data.io
         port: 22
         username: u113589676 
-        password: ATg4wKBcvLG4FMPy
+        password: ${{ secrets.FTP_PASSWORD }}
