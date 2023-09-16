@@ -1,4 +1,4 @@
-name: Lint
+name: 🚀 Deploy website on push
 
 on:
   push:
@@ -9,15 +9,15 @@ on:
       - master
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
+  web-deploy:
+    name: 🎉 Deploy
+    runs-on: ionos
     steps:
     - uses: actions/checkout@master
-    - name: Use Node.js 12.x
-      uses: actions/setup-node@v1
+    - name: 📂 Sync files
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
-        version: 12.x
-    - name: Lint
-      run: |
-        npm ci
-        npm run lint
+        server: access976482937.webspace-data.io
+        port: 22
+        username: u113589676 
+        password: ATg4wKBcvLG4FMPy
