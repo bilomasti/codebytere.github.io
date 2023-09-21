@@ -10,7 +10,6 @@ const errors = {
 
 const struct = {
   root: ['about', 'resume', 'contact'],
-  skills: ['proficient', 'familiar'],
 };
 
 const commands = {};
