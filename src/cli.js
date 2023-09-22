@@ -14,7 +14,7 @@ const struct = {
 
 const commands = {};
 let systemData = {};
-const rootPath = 'users/codebytere/root';
+const rootPath = 'users/bilomasti/root';
 
 const getDirectory = () => localStorage.directory;
 const setDirectory = (dir) => {
