@@ -33,6 +33,12 @@ const registerMinimizedToggle = () => {
   });
 };
 
+const registerHahaNicetryToggle = () => {
+  $('.button.red').click(() => {
+    alert("Ouch! Stop poking me!");
+  });
+};
+
 // Create new directory in current directory.
 commands.mkdir = () => errors.noWriteAccess;
 
@@ -131,6 +137,7 @@ commands.cat = (filename) => {
 $(() => {
   registerFullscreenToggle();
   registerMinimizedToggle();
+  registerHahaNicetryToggle();
   const cmd = document.getElementById('terminal');
 
   $.ajaxSetup({ cache: false });
